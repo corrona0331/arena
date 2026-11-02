@@ -8,12 +8,14 @@ from urllib.parse import urlparse
 ROOT = Path(__file__).resolve().parents[1] / "deliverables"
 PPTX_MIME = "application/vnd.openxmlformats-officedocument.presentationml.presentation"
 FILES = {
-    # Current September briefing; short aliases point to the latest deck.
-    "/download/pptx": (ROOT / "September_2026_Semiconductor_News_CEO_Briefing.pptx", PPTX_MIME),
-    "/download/zip": (ROOT / "September_2026_Semiconductor_News_CEO_Briefing.zip", "application/zip"),
+    # Current October briefing; short aliases point to the latest deck.
+    "/download/pptx": (ROOT / "October_2026_Semiconductor_News_CEO_Briefing.pptx", PPTX_MIME),
+    "/download/zip": (ROOT / "October_2026_Semiconductor_News_CEO_Briefing.zip", "application/zip"),
+    "/download/october/pptx": (ROOT / "October_2026_Semiconductor_News_CEO_Briefing.pptx", PPTX_MIME),
+    "/download/october/zip": (ROOT / "October_2026_Semiconductor_News_CEO_Briefing.zip", "application/zip"),
+    # Previous briefings remain available for reference.
     "/download/september/pptx": (ROOT / "September_2026_Semiconductor_News_CEO_Briefing.pptx", PPTX_MIME),
     "/download/september/zip": (ROOT / "September_2026_Semiconductor_News_CEO_Briefing.zip", "application/zip"),
-    # Previous April briefing remains available for reference.
     "/download/april/pptx": (ROOT / "April_2026_Semiconductor_News_CEO_Briefing.pptx", PPTX_MIME),
     "/download/april/zip": (ROOT / "April_2026_Semiconductor_News_CEO_Briefing.zip", "application/zip"),
 }
@@ -32,11 +34,11 @@ a{display:block;text-decoration:none;text-align:center;font-weight:800;border-ra
 .archive{border-top:1px solid #1b344b;margin-top:30px;padding-top:22px;display:flex;align-items:center;justify-content:space-between;gap:16px}.archive b{font-size:14px}.archive a{display:inline-block;padding:9px 13px;font-size:12px;margin-left:6px}
 small{display:block;color:#60758a;margin-top:24px;text-align:center}@media(max-width:620px){main{padding:28px}.buttons{grid-template-columns:1fr}.archive{display:block}.archive div{margin-top:12px}}
 </style></head><body><main>
-<span class="tag">CEO BRIEFING · SEPTEMBER 2026</span><h1>2026년 9월 세미뉴스 종합 보고</h1>
-<p>추론 스택 확장, HBM4·파운드리 CAPA, 미·중 공급망 블록, 한국 반도체 가치 풀과 CEO 90일 실행계획을 15장으로 정리했습니다.</p>
-<div class="buttons"><a class="primary" href="/download/september/pptx">PPTX 직접 다운로드</a><a class="secondary" href="/download/september/zip">ZIP 파일로 다운로드</a></div>
-<div class="meta"><span>16:9</span><span>15 slides</span><span>편집 가능한 도형 중심</span><span>약 81 KB</span></div>
-<div class="archive"><b>이전 4월 보고서</b><div><a class="secondary" href="/download/april/pptx">PPTX</a><a class="secondary" href="/download/april/zip">ZIP</a></div></div>
+<span class="tag">CEO BRIEFING · OCTOBER 2026</span><h1>2026년 10월 세미뉴스 종합 보고</h1>
+<p>16개 이슈·258개 헤드라인을 분석해 AI 수요, 메모리 공급권, 첨단패키징, 전력 병목, 중국 추격과 CEO 90일 실행계획을 19장으로 정리했습니다.</p>
+<div class="buttons"><a class="primary" href="/download/october/pptx">PPTX 직접 다운로드</a><a class="secondary" href="/download/october/zip">ZIP 파일로 다운로드</a></div>
+<div class="meta"><span>16:9</span><span>19 slides</span><span>편집 가능한 도형 중심</span><span>약 96 KB</span></div>
+<div class="archive"><b>이전 보고서</b><div><a class="secondary" href="/download/september/pptx">9월 PPTX</a><a class="secondary" href="/download/april/pptx">4월 PPTX</a></div></div>
 <small>브라우저에서 PPTX가 차단되면 ZIP을 내려받은 뒤 압축을 해제하세요.</small>
 </main></body></html>""".encode("utf-8")
 
