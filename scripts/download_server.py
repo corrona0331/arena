@@ -8,12 +8,16 @@ from urllib.parse import urlparse
 ROOT = Path(__file__).resolve().parents[1] / "deliverables"
 PPTX_MIME = "application/vnd.openxmlformats-officedocument.presentationml.presentation"
 FILES = {
-    # Current October briefing; short aliases point to the latest deck.
-    "/download/pptx": (ROOT / "October_2026_Semiconductor_News_CEO_Briefing.pptx", PPTX_MIME),
-    "/download/zip": (ROOT / "October_2026_Semiconductor_News_CEO_Briefing.zip", "application/zip"),
+    # Current English animated edition; short aliases point to this deck.
+    "/download/pptx": (ROOT / "October_2026_Semiconductor_News_CEO_Briefing_EN_Animated.pptx", PPTX_MIME),
+    "/download/zip": (ROOT / "October_2026_Semiconductor_News_CEO_Briefing_EN_Animated.zip", "application/zip"),
+    "/download/october/en/pptx": (ROOT / "October_2026_Semiconductor_News_CEO_Briefing_EN_Animated.pptx", PPTX_MIME),
+    "/download/october/en/zip": (ROOT / "October_2026_Semiconductor_News_CEO_Briefing_EN_Animated.zip", "application/zip"),
+    # Korean October edition and previous briefings remain available.
     "/download/october/pptx": (ROOT / "October_2026_Semiconductor_News_CEO_Briefing.pptx", PPTX_MIME),
     "/download/october/zip": (ROOT / "October_2026_Semiconductor_News_CEO_Briefing.zip", "application/zip"),
-    # Previous briefings remain available for reference.
+    "/download/october/ko/pptx": (ROOT / "October_2026_Semiconductor_News_CEO_Briefing.pptx", PPTX_MIME),
+    "/download/october/ko/zip": (ROOT / "October_2026_Semiconductor_News_CEO_Briefing.zip", "application/zip"),
     "/download/september/pptx": (ROOT / "September_2026_Semiconductor_News_CEO_Briefing.pptx", PPTX_MIME),
     "/download/september/zip": (ROOT / "September_2026_Semiconductor_News_CEO_Briefing.zip", "application/zip"),
     "/download/april/pptx": (ROOT / "April_2026_Semiconductor_News_CEO_Briefing.pptx", PPTX_MIME),
@@ -34,11 +38,11 @@ a{display:block;text-decoration:none;text-align:center;font-weight:800;border-ra
 .archive{border-top:1px solid #1b344b;margin-top:30px;padding-top:22px;display:flex;align-items:center;justify-content:space-between;gap:16px}.archive b{font-size:14px}.archive a{display:inline-block;padding:9px 13px;font-size:12px;margin-left:6px}
 small{display:block;color:#60758a;margin-top:24px;text-align:center}@media(max-width:620px){main{padding:28px}.buttons{grid-template-columns:1fr}.archive{display:block}.archive div{margin-top:12px}}
 </style></head><body><main>
-<span class="tag">CEO BRIEFING · OCTOBER 2026</span><h1>2026년 10월 세미뉴스 종합 보고</h1>
-<p>16개 이슈·258개 헤드라인을 분석해 AI 수요, 메모리 공급권, 첨단패키징, 전력 병목, 중국 추격과 CEO 90일 실행계획을 19장으로 정리했습니다.</p>
-<div class="buttons"><a class="primary" href="/download/october/pptx">PPTX 직접 다운로드</a><a class="secondary" href="/download/october/zip">ZIP 파일로 다운로드</a></div>
-<div class="meta"><span>16:9</span><span>19 slides</span><span>편집 가능한 도형 중심</span><span>약 96 KB</span></div>
-<div class="archive"><b>이전 보고서</b><div><a class="secondary" href="/download/september/pptx">9월 PPTX</a><a class="secondary" href="/download/april/pptx">4월 PPTX</a></div></div>
+<span class="tag">CEO BRIEFING · ENGLISH ANIMATED EDITION</span><h1>October 2026 Semiconductor News</h1>
+<p>An English CEO briefing built from 16 issues and 258 headlines, with restrained native PowerPoint fade and wipe reveals across 19 slides.</p>
+<div class="buttons"><a class="primary" href="/download/october/en/pptx">Download animated PPTX</a><a class="secondary" href="/download/october/en/zip">Download ZIP</a></div>
+<div class="meta"><span>16:9</span><span>19 slides</span><span>Editable native shapes</span><span>Fade + wipe animations</span><span>117 KB</span></div>
+<div class="archive"><b>Other editions</b><div><a class="secondary" href="/download/october/ko/pptx">Korean PPTX</a><a class="secondary" href="/download/september/pptx">September PPTX</a></div></div>
 <small>브라우저에서 PPTX가 차단되면 ZIP을 내려받은 뒤 압축을 해제하세요.</small>
 </main></body></html>""".encode("utf-8")
 
